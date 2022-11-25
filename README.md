@@ -1,6 +1,10 @@
 # MelekOdev6
 
-Testler Tb 173 te çalıştırılmıştır. Selenium framework kütüphanesi kullanılarak
+Testler Tb 173 te çalıştırılmıştır. 
+Projede selenium framework kütüphanesi, apache maven, junit, java , web driver teknolojileri kullanılmıştır. 
+Senaryolar test classları içerisinde yer almaktadır. 
+Page sayfalarında ise @FindBy annotaionları kullanılarak ilgili locator elementleri ve methodlar bulunur.
+Test classların içerisinde aşağıdaki şekilde @Tag, @DisplayName ve @Description lar yazılarak daha anlamlı hale getirilmiştir.
 
 LoginTestClass (Login Senaryosu Testi)
 
@@ -24,6 +28,19 @@ PostClassifiedTestClass (İlan Verme Senaryosu Testi) -> postClassifiedPage()
 Test fail edildiğinde screenshot alınır.
 
 mvn clean install -Dtest='PostClassfiedTestClass#postClassifiedPage' şeklinde mvn komutuyla başarılı şekilde çalıştırabilirsiniz.
+
+
+SearchClassifiedTestClass (Arama Sonuç Sayfası Testi) -> test1()
+
+ 1. Sahibinden.com anasayfa açılır
+ 2. Sol menüden 'otomobil' menüsüne tıklanır.
+ 3.'Bu Kategorideki Tüm İlanlar' yazısına tıklanır.
+ 4. Arama sonuçta ilanların geldiği kontrol edilir.
+ 5. Arama sonuçtaki ilk ilana tıklanır.
+ 6. İlan detayda 5. adımdaki veriler kontrol edilir.
+ 7. İlan detay sayfasın URL deki ilan no ile ilan detaydaki ilan no'nun aynı olduğu kontrol edilir.
+
+mvn clean install -Dtest='SearchClassfiedTestClass#test1' şeklinde mvn komutuyla başarılı şekilde çalıştırabilirsiniz.
 
 
 
