@@ -1,5 +1,7 @@
 # MelekOdev6
 
+Testler Tb 173 te çalıştırılmıştır. Selenium framework kütüphanesi kullanılarak
+
 LoginTestClass (Login Senaryosu Testi)
 
 1. Username ve password doğru bir şekilde girilir ve login başarılı bir şekilde gerçekleştiği görülür. -> login()
